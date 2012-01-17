@@ -20,4 +20,4 @@ recommends him a different one:
 Pip has decided to choose the one layout that allows him to write more words
 with the home and upper row. But he wants to keep things simple, the only
 symbols he wants to take into account are dot `.`, comma `,` and colon
-`;`. No other symbols. No numbers. No modifier keys.
+`:`. No other symbols. No numbers. No modifier keys.
