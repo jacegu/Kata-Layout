@@ -24,12 +24,10 @@ symbols he wants to take into account are dot `.`, comma `,` and colon
 
 How to help Pip
 ---------------
-1. Write a Layout class. You should be able to ask it which row a certain key
-   belongs to. It only cares wether a key is in the upper row, in the home row
-   or other row.
-   Uppercase letters are handled exactly the same way as lower case ones.
-2. You will need three layouts: US QWERTY, Dvorak and Colemak).
-3. Test drive some software that given a string, and a layout, returns the
-   percentage of keys pressed on each row.
-   For example: for the sentence `Apple is my favourite fruit` and the `qwerty`
-   layout the result should be: `upper: 22.22%, home: 55.56%, bottom: 22.22%`
+Test drive a piece of software that given a string, and a layout, returns the
+percentage of keys that would be pressed on each row. Uppercase letters are handled exactly the same way as lower case ones.
+
+For example: for the sentence `Apple is my favourite fruit` and the `qwerty`
+layout the result should be: `upper: 22.22, home: 55.56, bottom: 22.22`
+
+You don't have to deal with User Interfaces or I/O. Pip will know how to invoke your code: he is a smart guy.
