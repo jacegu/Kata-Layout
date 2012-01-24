@@ -10,7 +10,7 @@ recommends him a different one:
   learning.
   ![US querty layout](http://upload.wikimedia.org/wikipedia/en/thumb/5/51/KB_United_States-NoAltGr.svg/420px-KB_United_States-NoAltGr.svg.png "US querty layout")
 
-- Sebas has been using **Dvorak** for years and highly recommends it.
+- Sebastian has been using **Dvorak** for years and highly recommends it.
   ![Dvorak layout](http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/KB_United_States_Dvorak.svg/420px-KB_United_States_Dvorak.svg.png "Dvorak layout")
 
 - Aimee says that **Colemak** is the best layout out there and that it's easier
@@ -21,3 +21,15 @@ Pip has decided to choose the one layout that allows him to write more words
 with the home and upper row. But he wants to keep things simple, the only
 symbols he wants to take into account are dot `.`, comma `,` and colon
 `:`. No other symbols. No numbers. No modifier keys.
+
+How to help Pip
+---------------
+1. Write a Layout class. You should be able to ask it which row a certain key
+   belongs to. It only cares wether a key is in the upper row, in the home row
+   or other row.
+   Uppercase letters are handled exactly the same way as lower case ones.
+2. You will need three layouts: US QWERTY, Dvorak and Colemak).
+3. Test drive some software that given a string, and a layout, returns the
+   percentage of keys pressed on each row.
+   For example: for the sentence `Apple is my favourite fruit` and the `qwerty`
+   layout the result should be: `upper: 22.22%, home: 55.56%, bottom: 22.22%`
